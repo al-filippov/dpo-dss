@@ -1,0 +1,1444 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://is.ulstu.ru/balance/recommendations"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://is.ulstu.ru/balance/recommendations">
+    <Prefix name="" IRI="http://is.ulstu.ru/balance/recommendations"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#AREA_POWER"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bad"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EMPLOYEE_POWER"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EP"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EP_Bad"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EP_Good"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EP_TP"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EP_TP_Bad"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EP_TP_Good"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Evaluation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Good"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#High"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Indicator"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Low"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Middle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Recommendation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Resume"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#State"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#StateHigh"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#StateLow"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#StateMiddle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TOOL_COUNT"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TOOL_POWER"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TP"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TP_Bad"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TP_Good"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasResume"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasState"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasDescription"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasValue"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AREA_POWER"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#EMPLOYEE_POWER"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#EP_Bad"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#EP_Good"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#EP_TP_Bad"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#EP_TP_Good"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#StateHigh"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#StateLow"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#StateMiddle"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TOOL_COUNT"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TOOL_POWER"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TP_Bad"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TP_Good"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#AREA_POWER"/>
+        <Class IRI="#Indicator"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bad"/>
+        <Class IRI="#Evaluation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EMPLOYEE_POWER"/>
+        <Class IRI="#Indicator"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EP"/>
+        <Class IRI="#Resume"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EP_Bad"/>
+        <Class IRI="#EP"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EP_Good"/>
+        <Class IRI="#EP"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EP_TP"/>
+        <Class IRI="#Resume"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EP_TP_Bad"/>
+        <Class IRI="#EP_TP"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EP_TP_Good"/>
+        <Class IRI="#EP_TP"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Good"/>
+        <Class IRI="#Evaluation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#High"/>
+        <Class IRI="#Evaluation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Low"/>
+        <Class IRI="#Evaluation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Middle"/>
+        <Class IRI="#Evaluation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Resume"/>
+        <Class IRI="#Recommendation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#State"/>
+        <Class IRI="#Recommendation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StateHigh"/>
+        <Class IRI="#State"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StateLow"/>
+        <Class IRI="#State"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StateMiddle"/>
+        <Class IRI="#State"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TOOL_COUNT"/>
+        <Class IRI="#Indicator"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TOOL_POWER"/>
+        <Class IRI="#Indicator"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TP"/>
+        <Class IRI="#Resume"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TP_Bad"/>
+        <Class IRI="#TP"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TP_Good"/>
+        <Class IRI="#TP"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#AREA_POWER"/>
+        <Class IRI="#EMPLOYEE_POWER"/>
+        <Class IRI="#TOOL_COUNT"/>
+        <Class IRI="#TOOL_POWER"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Bad"/>
+        <Class IRI="#Good"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#EP"/>
+        <Class IRI="#EP_TP"/>
+        <Class IRI="#TP"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#EP_Bad"/>
+        <Class IRI="#EP_Good"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#EP_TP_Bad"/>
+        <Class IRI="#EP_TP_Good"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#High"/>
+        <Class IRI="#Low"/>
+        <Class IRI="#Middle"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#StateHigh"/>
+        <Class IRI="#StateLow"/>
+        <Class IRI="#StateMiddle"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#TP_Bad"/>
+        <Class IRI="#TP_Good"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#AREA_POWER"/>
+        <NamedIndividual IRI="#AREA_POWER"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#EMPLOYEE_POWER"/>
+        <NamedIndividual IRI="#EMPLOYEE_POWER"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#EP_Bad"/>
+        <NamedIndividual IRI="#EP_Bad"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#EP_Good"/>
+        <NamedIndividual IRI="#EP_Good"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#EP_TP_Bad"/>
+        <NamedIndividual IRI="#EP_TP_Bad"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#EP_TP_Good"/>
+        <NamedIndividual IRI="#EP_TP_Good"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#StateHigh"/>
+        <NamedIndividual IRI="#StateHigh"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#StateLow"/>
+        <NamedIndividual IRI="#StateLow"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#StateMiddle"/>
+        <NamedIndividual IRI="#StateMiddle"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TOOL_COUNT"/>
+        <NamedIndividual IRI="#TOOL_COUNT"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TOOL_POWER"/>
+        <NamedIndividual IRI="#TOOL_POWER"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TP_Bad"/>
+        <NamedIndividual IRI="#TP_Bad"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TP_Good"/>
+        <NamedIndividual IRI="#TP_Good"/>
+    </ClassAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasValue"/>
+        <NamedIndividual IRI="#AREA_POWER"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">144.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasValue"/>
+        <NamedIndividual IRI="#EMPLOYEE_POWER"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">113610.41</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDescription"/>
+        <NamedIndividual IRI="#EP_Bad"/>
+        <Literal>Мощности в человеко-часах в расчете на 1 месяц недостаточно для выполнения производственной программы. Необходимо нанять работников.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDescription"/>
+        <NamedIndividual IRI="#EP_Good"/>
+        <Literal>Мощности в человеко-часах в расчете на 1 месяц достаточно для выполнения производственной программы.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDescription"/>
+        <NamedIndividual IRI="#EP_TP_Bad"/>
+        <Literal>Мощности в человеко-часах и мощности в станко-часах в расчете на 1 месяц недостаточно для выполнения производственной программы. Необходимо выполнить следующие действия:
+- Купить оборудование
+- Нанять работников
+- ...
+- PROFIT!</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDescription"/>
+        <NamedIndividual IRI="#EP_TP_Good"/>
+        <Literal>Мощности в человеко-часах и мощности в станко-часах в расчете на 1 месяц достаточно для выполнения производственной программы.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDescription"/>
+        <NamedIndividual IRI="#StateHigh"/>
+        <Literal>Значение показателя является высоким</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDescription"/>
+        <NamedIndividual IRI="#StateLow"/>
+        <Literal>Значение показателя является низким</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDescription"/>
+        <NamedIndividual IRI="#StateMiddle"/>
+        <Literal>Значение показателя является средним</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasValue"/>
+        <NamedIndividual IRI="#TOOL_COUNT"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">18.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasValue"/>
+        <NamedIndividual IRI="#TOOL_POWER"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">2700.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDescription"/>
+        <NamedIndividual IRI="#TP_Bad"/>
+        <Literal>Мощности в станко-часах в расчете на 1 месяц недостаточно для выполнения производственной программы. Необходимо купить оборудование.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDescription"/>
+        <NamedIndividual IRI="#TP_Good"/>
+        <Literal>Мощности в станко-часах в расчете на 1 месяц достаточно для выполнения производственной программы.</Literal>
+    </DataPropertyAssertion>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasResume"/>
+        <Class IRI="#Indicator"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasState"/>
+        <Class IRI="#Indicator"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasResume"/>
+        <Class IRI="#Resume"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasState"/>
+        <Class IRI="#State"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasDescription"/>
+        <Class IRI="#Recommendation"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasValue"/>
+        <Class IRI="#Indicator"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasDescription"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasValue"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>AREA_POWER_High</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#AREA_POWER"/>
+                <Variable IRI="#ind"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasValue"/>
+                <Variable IRI="#ind"/>
+                <Variable IRI="#val"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#greaterThan">
+                <Variable IRI="#val"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">100</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#High"/>
+                <Variable IRI="#ind"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>AREA_POWER_Middle</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#AREA_POWER"/>
+                <Variable IRI="#ind"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasValue"/>
+                <Variable IRI="#ind"/>
+                <Variable IRI="#val"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#greaterThan">
+                <Variable IRI="#val"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">50</Literal>
+            </BuiltInAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#lessThanOrEqual">
+                <Variable IRI="#val"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">100</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#Middle"/>
+                <Variable IRI="#ind"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>AREA_POWER_Low</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#AREA_POWER"/>
+                <Variable IRI="#ind"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasValue"/>
+                <Variable IRI="#ind"/>
+                <Variable IRI="#val"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#lessThanOrEqual">
+                <Variable IRI="#val"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">50</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#Low"/>
+                <Variable IRI="#ind"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>EP_TP_Bad</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#EMPLOYEE_POWER"/>
+                <Variable IRI="#ep"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#Bad"/>
+                <Variable IRI="#ep"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#TOOL_POWER"/>
+                <Variable IRI="#tp"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#Bad"/>
+                <Variable IRI="#tp"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#EP_TP_Bad"/>
+                <Variable IRI="#res"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasResume"/>
+                <Variable IRI="#ep"/>
+                <Variable IRI="#res"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasResume"/>
+                <Variable IRI="#tp"/>
+                <Variable IRI="#res"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>EP_Bad</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#EMPLOYEE_POWER"/>
+                <Variable IRI="#ep"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#Bad"/>
+                <Variable IRI="#ep"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#EP_Bad"/>
+                <Variable IRI="#res"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasResume"/>
+                <Variable IRI="#ep"/>
+                <Variable IRI="#res"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>TP_Bad</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#TOOL_POWER"/>
+                <Variable IRI="#tp"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#Bad"/>
+                <Variable IRI="#tp"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#TP_Bad"/>
+                <Variable IRI="#res"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasResume"/>
+                <Variable IRI="#tp"/>
+                <Variable IRI="#res"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>EP_Good</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#EMPLOYEE_POWER"/>
+                <Variable IRI="#ep"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#Good"/>
+                <Variable IRI="#ep"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#EP_Good"/>
+                <Variable IRI="#res"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasResume"/>
+                <Variable IRI="#ep"/>
+                <Variable IRI="#res"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>EP_TP_Good</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#EMPLOYEE_POWER"/>
+                <Variable IRI="#ep"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#Good"/>
+                <Variable IRI="#ep"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#TOOL_POWER"/>
+                <Variable IRI="#tp"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#Good"/>
+                <Variable IRI="#tp"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#EP_TP_Good"/>
+                <Variable IRI="#res"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasResume"/>
+                <Variable IRI="#ep"/>
+                <Variable IRI="#res"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasResume"/>
+                <Variable IRI="#tp"/>
+                <Variable IRI="#res"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>EMPLOYEE_POWER_Good</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#EMPLOYEE_POWER"/>
+                <Variable IRI="#ep"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#High"/>
+                <Variable IRI="#ep"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#Good"/>
+                <Variable IRI="#ep"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>EMPLOYEE_POWER_Bad_Low</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#EMPLOYEE_POWER"/>
+                <Variable IRI="#ep"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#Low"/>
+                <Variable IRI="#ep"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#Bad"/>
+                <Variable IRI="#ep"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>EMPLOYEE_POWER_Bad_Middle</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#EMPLOYEE_POWER"/>
+                <Variable IRI="#ep"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#Middle"/>
+                <Variable IRI="#ep"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#Bad"/>
+                <Variable IRI="#ep"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>EMPLOYEE_POWER_Middle</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#EMPLOYEE_POWER"/>
+                <Variable IRI="#ind"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasValue"/>
+                <Variable IRI="#ind"/>
+                <Variable IRI="#val"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#greaterThan">
+                <Variable IRI="#val"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2000</Literal>
+            </BuiltInAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#lessThanOrEqual">
+                <Variable IRI="#val"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">4000</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#Middle"/>
+                <Variable IRI="#ind"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>EMPLOYEE_POWER_High</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#EMPLOYEE_POWER"/>
+                <Variable IRI="#ind"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasValue"/>
+                <Variable IRI="#ind"/>
+                <Variable IRI="#val"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#greaterThan">
+                <Variable IRI="#val"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">4000</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#High"/>
+                <Variable IRI="#ind"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>EMPLOYEE_POWER_Low</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#EMPLOYEE_POWER"/>
+                <Variable IRI="#ind"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasValue"/>
+                <Variable IRI="#ind"/>
+                <Variable IRI="#val"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#lessThanOrEqual">
+                <Variable IRI="#val"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2000</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#Low"/>
+                <Variable IRI="#ind"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>TP_Good</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#TOOL_POWER"/>
+                <Variable IRI="#tp"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#Good"/>
+                <Variable IRI="#tp"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#TP_Good"/>
+                <Variable IRI="#res"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasResume"/>
+                <Variable IRI="#tp"/>
+                <Variable IRI="#res"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>TOOL_POWER_Good</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#TOOL_POWER"/>
+                <Variable IRI="#ep"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#High"/>
+                <Variable IRI="#ep"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#Good"/>
+                <Variable IRI="#ep"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>StateHigh</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#High"/>
+                <Variable IRI="urn:swrl:var#ind"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#StateHigh"/>
+                <Variable IRI="urn:swrl:var#state"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasState"/>
+                <Variable IRI="urn:swrl:var#ind"/>
+                <Variable IRI="urn:swrl:var#state"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>TOOL_POWER_Bad_Low</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#TOOL_POWER"/>
+                <Variable IRI="#ep"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#Low"/>
+                <Variable IRI="#ep"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#Bad"/>
+                <Variable IRI="#ep"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>StateLow</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Low"/>
+                <Variable IRI="urn:swrl:var#ind"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#StateLow"/>
+                <Variable IRI="urn:swrl:var#state"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasState"/>
+                <Variable IRI="urn:swrl:var#ind"/>
+                <Variable IRI="urn:swrl:var#state"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>TOOL_POWER_Bad_Middle</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#TOOL_POWER"/>
+                <Variable IRI="#ep"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#Middle"/>
+                <Variable IRI="#ep"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#Bad"/>
+                <Variable IRI="#ep"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>StateMiddle</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Middle"/>
+                <Variable IRI="urn:swrl:var#ind"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#StateMiddle"/>
+                <Variable IRI="urn:swrl:var#state"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasState"/>
+                <Variable IRI="urn:swrl:var#ind"/>
+                <Variable IRI="urn:swrl:var#state"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>TOOL_COUNT_High</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#TOOL_COUNT"/>
+                <Variable IRI="#ind"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasValue"/>
+                <Variable IRI="#ind"/>
+                <Variable IRI="#val"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#greaterThan">
+                <Variable IRI="#val"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2000</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#High"/>
+                <Variable IRI="#ind"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>TOOL_COUNT_Middle</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#TOOL_COUNT"/>
+                <Variable IRI="#ind"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasValue"/>
+                <Variable IRI="#ind"/>
+                <Variable IRI="#val"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#greaterThan">
+                <Variable IRI="#val"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">500</Literal>
+            </BuiltInAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#lessThanOrEqual">
+                <Variable IRI="#val"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2000</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#Middle"/>
+                <Variable IRI="#ind"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>TOOL_COUNT_Low</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#TOOL_COUNT"/>
+                <Variable IRI="#ind"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasValue"/>
+                <Variable IRI="#ind"/>
+                <Variable IRI="#val"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#lessThanOrEqual">
+                <Variable IRI="#val"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">500</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#Low"/>
+                <Variable IRI="#ind"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>TOOL_POWER_Middle</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#TOOL_POWER"/>
+                <Variable IRI="urn:swrl:var#ind"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasValue"/>
+                <Variable IRI="urn:swrl:var#ind"/>
+                <Variable IRI="urn:swrl:var#val"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#greaterThan">
+                <Variable IRI="urn:swrl:var#val"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1000</Literal>
+            </BuiltInAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#lessThanOrEqual">
+                <Variable IRI="urn:swrl:var#val"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3000</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#Middle"/>
+                <Variable IRI="urn:swrl:var#ind"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>TOOL_POWER_High</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#TOOL_POWER"/>
+                <Variable IRI="urn:swrl:var#ind"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasValue"/>
+                <Variable IRI="urn:swrl:var#ind"/>
+                <Variable IRI="urn:swrl:var#val"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#greaterThan">
+                <Variable IRI="urn:swrl:var#val"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3000</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#High"/>
+                <Variable IRI="urn:swrl:var#ind"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>TOOL_POWER_Low</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#TOOL_POWER"/>
+                <Variable IRI="urn:swrl:var#ind"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasValue"/>
+                <Variable IRI="urn:swrl:var#ind"/>
+                <Variable IRI="urn:swrl:var#val"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#lessThanOrEqual">
+                <Variable IRI="urn:swrl:var#val"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1000</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#Low"/>
+                <Variable IRI="urn:swrl:var#ind"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>GetResume</Literal>
+        </Annotation>
+        <Body>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasResume"/>
+                <Variable IRI="#ind"/>
+                <Variable IRI="#rule"/>
+            </ObjectPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasDescription"/>
+                <Variable IRI="#rule"/>
+                <Variable IRI="#descr"/>
+            </DataPropertyAtom>
+        </Body>
+        <Head>
+            <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#selectDistinct">
+                <Variable IRI="#ind"/>
+                <Variable IRI="#rule"/>
+                <Variable IRI="#descr"/>
+            </BuiltInAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>GetStates</Literal>
+        </Annotation>
+        <Body>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasState"/>
+                <Variable IRI="#ind"/>
+                <Variable IRI="#state"/>
+            </ObjectPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasDescription"/>
+                <Variable IRI="#state"/>
+                <Variable IRI="#descr"/>
+            </DataPropertyAtom>
+        </Body>
+        <Head>
+            <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select">
+                <Variable IRI="#ind"/>
+                <Variable IRI="#descr"/>
+            </BuiltInAtom>
+        </Head>
+    </DLSafeRule>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
